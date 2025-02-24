@@ -105,6 +105,13 @@
 			linux,default-trigger = "heartbeat";
 			default-state = "off";
 		};
+		led-green {
+			label = "stm32mp:green:user";
+			gpios = <&gpioa 14 GPIO_ACTIVE_LOW>;
+			default-state = "on";
+
+			status = "okay";
+		};
 	};
 
 	sound {
